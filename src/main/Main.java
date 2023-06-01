@@ -1,5 +1,6 @@
 package main;
 
+import GUI.GuiPrincipal;
 import menus.MainMenu;
 import operaciones.*;
 
@@ -11,6 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         MainMenu mainMenu = new MainMenu(new AgregarFechas(), new AgendarCita(), new Doctores(), new BuscarCita(), new CancelarCita(),
                 new MostrarFechas(),new ArrayList<>(),new ArrayList<>());
-        mainMenu.menu(scanner);
+        //mainMenu.menu(scanner);
+        new GuiPrincipal();
     }
 }
